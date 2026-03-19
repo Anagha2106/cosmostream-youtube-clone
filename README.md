@@ -48,7 +48,7 @@ CosmoStream/
 
 1.  **Download or clone the repository**:
     ```bash
-    git clone [https://github.com/Anagha2106/cosmostream-youtube-clone.git](https://github.com/Anagha2106/cosmostream-youtube-clone.git)
+    git clone https://github.com/Anagha2106/cosmostream-youtube-clone.git
     ```
 2.  **Open index.html in your browser**:  
     No server required — runs completely on the browser.
