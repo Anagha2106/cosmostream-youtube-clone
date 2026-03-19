@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing - CosmoStream</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="sidebar-hidden">
+
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">
+                        <i class="uil uil-bars"></i>
+                    </button>
+                    <a href="#" class="nav-logo">
+                        <img src="assets/images/logo1.png" alt="Logo" class="logo-image">
+                        <h2 class="logo-text">CosmoStream</h2>
+                    </a>
+                </div>
+
+                <div class="nav-section nav-center">
+                    <form action="#" class="search-form">
+                        <input type="search" placeholder="search" required class="search-input">
+                        <button class="nav-button search-button">
+                            <i class="uil uil-search"></i>
+                        </button>
+                    </form>
+                    <button class="nav-button mic-button">
+                        <i class="uil uil-microphone"></i>
+                    </button>
+                </div>
+
+                <div class="nav-section nav-right">
+                    <button class="nav-button search-button">
+                            <i class="uil uil-search"></i>
+                        </button>
+                    <button class="nav-button theme-button">
+                        <i class="uil uil-moon"></i>
+                    </button>
+                    <img src="assets/images/profile-photo.jpg" alt="User Image" class="user-image">
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-layout player-page">
+            <div class="screen-overlay"></div>
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">
+                        <i class="uil uil-bars"></i>
+                    </button>
+                    <a href="index.html" class="nav-logo">
+                        <img src="assets/images/logo1.png" alt="Logo" class="logo-image">
+                        <h2 class="logo-text">CosmoStream</h2>
+                    </a>
+                </div>
+
+                <div class="link-container">
+                    <div class="link-section">
+                        <a href="#" class="link-item">
+                            <i class="uil uil-estate"></i> Home
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-video"></i> Shorts
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-tv-retro"></i> Subscription
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">You</h4>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-user-square"></i> Your channel
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-history"></i> History
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-clock"></i> Watch later
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">Explore</h4>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-fire"></i> Trending
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-music"></i> Music
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-basketball"></i> Gaming
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-trophy"></i> Sports
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">More from CosmoStream</h4>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-shield-plus"></i> CosmoStream Plus
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-headphones-alt"></i> CosmoStream Music
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-airplay"></i> CosmoStream Kids
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <a href="#" class="link-item">
+                            <i class="uil uil-setting"></i> Settings
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-file-medical-alt"></i> Report
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-question-circle"></i> Help
+                        </a>
+                        <a href="#" class="link-item">
+                            <i class="uil uil-exclamation-triangle"></i> Feedback
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                </div>
+            </aside>
+            <div class="content-player">
+                <div class="video-container">
+                    <video id="videoPlayer" controls autoplay></video>
+                    
+                    <div class="video-main-info">
+                        <h1 id="displayTitle">Loading Title...</h1>
+                        <div class="channel-data">
+                            <div class="channel-left">
+                                <img src="assets/images/logo1.png" class="player-icon">
+                                <div>
+                                    <p id="displayChannel">Channel Name</p>
+                                    <p id="displayViews">0 views</p>
+                                </div>
+                                <button class="sub-btn">Subscribe</button>
+                            </div>
+                            <div class="video-actions">
+                                <button class="action-item"><i class="uil uil-share"></i> Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sidebar-right">
+                    <h3 style="font-size: 18px; margin-bottom:15px;">Suggested Videos</h3>
+                    <div id="suggestedList" class="suggested-list"></div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="index.js" defer></script>
+    </body>
+</html>
